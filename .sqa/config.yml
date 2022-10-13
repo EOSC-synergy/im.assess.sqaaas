@@ -15,70 +15,70 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-yellow-lynx.sh
-        container: qc.acc_wheezy-pumpkin-yak
+        - /usr/bin/env sh .sqa/script.sloppy-bistre-caterpillar.sh
+        container: qc.acc_chewy-saffron-birman
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-aqua-maltese.sh
-        container: qc.doc_hasty-razzmatazz-russel
+        - /usr/bin/env sh .sqa/script.dorky-buff-fox.sh
+        container: qc.doc_stuffy-dandelion-gharial
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-corn-dodo.sh
-        container: qc.doc_squeaky-beige-ray
+        - /usr/bin/env sh .sqa/script.shabby-cinnabar-corgi.sh
+        container: qc.doc_seedy-tan-heron
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-teal-abyssinian.sh
-        container: qc.doc_hazy-scarlet-spaniel
+        - /usr/bin/env sh .sqa/script.scaly-black-tiger.sh
+        container: qc.doc_scummy-periwinkle-orangutan
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-carmine-llama.sh
-        container: qc.doc_baggy-malachite-orangutan
+        - /usr/bin/env sh .sqa/script.whiny-magnolia-centipede.sh
+        container: qc.doc_foggy-champagne-stoat
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-sepia-fox.sh
-        container: qc.lic_smelly-razzmatazz-barnacle
+        - /usr/bin/env sh .sqa/script.seedy-fuchsia-uakari.sh
+        container: qc.lic_slaphappy-flax-russel
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-black-monster.sh
-        container: qc.met_flabby-salmon-buzzard
+        - /usr/bin/env sh .sqa/script.beady-goldenrod-mongrel.sh
+        container: qc.met_cozy-tan-newt
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-blue-coyote.sh
-        container: qc.sec_gimpy-amethyst-mayfly
+        - /usr/bin/env sh .sqa/script.seedy-myrtle-hedgehog.sh
+        container: qc.sec_nerdy-teal-spoonbill
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-rust-grouse.sh
-        container: qc.sty_gimpy-ruby-argentino
+        - /usr/bin/env sh .sqa/script.pokey-rose-reindeer.sh
+        container: qc.sty_dorky-buff-termite
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-celadon-javanese.sh
-        container: qc.sty_nippy-cardinal-snail
+        - /usr/bin/env sh .sqa/script.hilly-linen-barb.sh
+        container: qc.sty_flabby-ultramarine-labradoodle
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-violet-bullfrog.sh
-        container: qc.sty_ready-denim-dachsbracke
+        - /usr/bin/env sh .sqa/script.skanky-sangria-eleuth.sh
+        container: qc.sty_baggy-harlequin-albatross
       github.com/grycap/im rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-red-kingfisher.sh
-        container: qc.sty_lovely-jade-serval
+        - /usr/bin/env sh .sqa/script.wheezy-peach-quokka.sh
+        container: qc.sty_clammy-olive-stoat
       github.com/grycap/im stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-gamboge-sheepdog.sh
-        container: qc.sty_crabby-smalt-flounder
+        - /usr/bin/env sh .sqa/script.crabby-khaki-seal.sh
+        container: qc.sty_freaky-seashell-gibbon
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-plum-schnauzer.sh
-        container: qc.ver_greasy-pear-lionfish
+        - /usr/bin/env sh .sqa/script.sunny-cobalt-anteater.sh
+        container: qc.ver_gloppy-goldenrod-swan
 timeout: 1800
