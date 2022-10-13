@@ -15,70 +15,70 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-myrtle-robin.sh
-        container: qc.acc_frumpy-russet-bloodhound
+        - /usr/bin/env sh .sqa/script.silly-yellow-lynx.sh
+        container: qc.acc_wheezy-pumpkin-yak
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-cinnamon-beagle.sh
-        container: qc.doc_homey-champagne-impala
+        - /usr/bin/env sh .sqa/script.trippy-aqua-maltese.sh
+        container: qc.doc_hasty-razzmatazz-russel
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-rose-dachsbracke.sh
-        container: qc.doc_skimpy-magenta-russel
+        - /usr/bin/env sh .sqa/script.droopy-corn-dodo.sh
+        container: qc.doc_squeaky-beige-ray
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-sepia-beaver.sh
-        container: qc.doc_beady-brass-zonkey
+        - /usr/bin/env sh .sqa/script.snappy-teal-abyssinian.sh
+        container: qc.doc_hazy-scarlet-spaniel
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-jade-beaver.sh
-        container: qc.doc_snippy-salmon-hippopotamus
+        - /usr/bin/env sh .sqa/script.squirrely-carmine-llama.sh
+        container: qc.doc_baggy-malachite-orangutan
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-pink-llama.sh
-        container: qc.lic_foggy-auburn-hedgehog
+        - /usr/bin/env sh .sqa/script.lovely-sepia-fox.sh
+        container: qc.lic_smelly-razzmatazz-barnacle
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-pink-kudu.sh
-        container: qc.met_homely-smalt-bat
+        - /usr/bin/env sh .sqa/script.droopy-black-monster.sh
+        container: qc.met_flabby-salmon-buzzard
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-tomato-dragonfly.sh
-        container: qc.sec_snoopy-jade-walrus
+        - /usr/bin/env sh .sqa/script.zippy-blue-coyote.sh
+        container: qc.sec_gimpy-amethyst-mayfly
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-brass-cichlid.sh
-        container: qc.sty_homely-tomato-hamster
+        - /usr/bin/env sh .sqa/script.homely-rust-grouse.sh
+        container: qc.sty_gimpy-ruby-argentino
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-viridian-spoonbill.sh
-        container: qc.sty_flimsy-denim-monster
+        - /usr/bin/env sh .sqa/script.sleepy-celadon-javanese.sh
+        container: qc.sty_nippy-cardinal-snail
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-rose-hedgehog.sh
-        container: qc.sty_ugly-bistre-beetle
+        - /usr/bin/env sh .sqa/script.shaggy-violet-bullfrog.sh
+        container: qc.sty_ready-denim-dachsbracke
       github.com/grycap/im rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-crimson-goat.sh
-        container: qc.sty_randy-olivine-javanese
+        - /usr/bin/env sh .sqa/script.geeky-red-kingfisher.sh
+        container: qc.sty_lovely-jade-serval
       github.com/grycap/im stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-silver-ostrich.sh
-        container: qc.sty_flaky-peach-worm
+        - /usr/bin/env sh .sqa/script.hilly-gamboge-sheepdog.sh
+        container: qc.sty_crabby-smalt-flounder
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-auburn-rhinoceros.sh
-        container: qc.ver_woolly-coral-swan
+        - /usr/bin/env sh .sqa/script.lanky-plum-schnauzer.sh
+        container: qc.ver_greasy-pear-lionfish
 timeout: 1800
