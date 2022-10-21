@@ -15,70 +15,70 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-cyan-cat.sh
-        container: qc.acc_frumpy-lilac-snake
+        - /usr/bin/env sh .sqa/script.snazzy-peach-alligator.sh
+        container: qc.acc_stinky-eggplant-bonobo
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-taupe-fish.sh
-        container: qc.doc_silly-chartreuse-quoll
+        - /usr/bin/env sh .sqa/script.lanky-cerulean-walrus.sh
+        container: qc.doc_stinky-sapphire-mandrill
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-chestnut-stoat.sh
-        container: qc.doc_gamy-sepia-grasshopper
+        - /usr/bin/env sh .sqa/script.tasty-gamboge-cuttlefish.sh
+        container: qc.doc_sunny-lemon-booby
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-copper-oyster.sh
-        container: qc.doc_trippy-corn-chihuahua
+        - /usr/bin/env sh .sqa/script.cozy-zucchini-camel.sh
+        container: qc.doc_pokey-smalt-albatross
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-coral-wrasse.sh
-        container: qc.doc_baggy-flax-lion
+        - /usr/bin/env sh .sqa/script.muggy-sangria-dingo.sh
+        container: qc.doc_greasy-sangria-boar
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-grey-dolphin.sh
-        container: qc.lic_randy-salmon-zebra
+        - /usr/bin/env sh .sqa/script.tacky-platinum-termite.sh
+        container: qc.lic_greasy-green-bulldog
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-lavender-angelfish.sh
-        container: qc.met_scaly-black-cichlid
+        - /usr/bin/env sh .sqa/script.baggy-buff-dugong.sh
+        container: qc.met_tacky-chestnut-mouse
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-wisteria-sheepdog.sh
-        container: qc.sec_tasty-maroon-cuscus
+        - /usr/bin/env sh .sqa/script.ready-magnolia-rat.sh
+        container: qc.sec_foggy-wheat-zonkey
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-platinum-impala.sh
-        container: qc.sty_homely-persimmon-swan
+        - /usr/bin/env sh .sqa/script.stealthy-mauve-boar.sh
+        container: qc.sty_hasty-carmine-gorilla
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-periwinkle-barnacle.sh
-        container: qc.sty_cozy-cinnamon-bonobo
+        - /usr/bin/env sh .sqa/script.wiggy-amaranth-gorilla.sh
+        container: qc.sty_nippy-sangria-monkey
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-brass-wolverine.sh
-        container: qc.sty_bumpy-puce-boar
+        - /usr/bin/env sh .sqa/script.homely-linen-alligator.sh
+        container: qc.sty_silly-denim-bat
       github.com/grycap/im rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-tomato-robin.sh
-        container: qc.sty_smelly-brass-monkey
+        - /usr/bin/env sh .sqa/script.grumpy-magnolia-lemur.sh
+        container: qc.sty_skinny-taupe-terrier
       github.com/grycap/im stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-amaranth-crab.sh
-        container: qc.sty_grumpy-seashell-fox
+        - /usr/bin/env sh .sqa/script.hasty-sepia-dog.sh
+        container: qc.sty_flimsy-denim-moth
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-magenta-forest.sh
-        container: qc.ver_muzzy-buff-wombat
+        - /usr/bin/env sh .sqa/script.smelly-ecru-eleuth.sh
+        container: qc.ver_cloudy-chartreuse-baboon
 timeout: 1800
