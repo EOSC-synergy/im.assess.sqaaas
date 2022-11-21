@@ -15,70 +15,70 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-wisteria-kakapo.sh
-        container: qc.acc_homely-gold-angora
+        - /usr/bin/env sh .sqa/script.sleazy-maroon-nightingale.sh
+        container: qc.acc_zippy-red-chin
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-peach-okapi.sh
-        container: qc.doc_cloudy-white-bird
+        - /usr/bin/env sh .sqa/script.slimy-tomato-balinese.sh
+        container: qc.doc_chummy-red-opossum
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-asparagus-cheetah.sh
-        container: qc.doc_woozy-salmon-collie
+        - /usr/bin/env sh .sqa/script.thirsty-ecru-discus.sh
+        container: qc.doc_crabby-green-opossum
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-rust-coati.sh
-        container: qc.doc_messy-gold-neanderthal
+        - /usr/bin/env sh .sqa/script.boozy-teal-manatee.sh
+        container: qc.doc_zippy-cinnamon-neanderthal
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-orange-liger.sh
-        container: qc.doc_muzzy-violet-buzzard
+        - /usr/bin/env sh .sqa/script.homely-olive-gar.sh
+        container: qc.doc_skimpy-linen-guppy
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-mustard-affenpinscher.sh
-        container: qc.lic_snazzy-aquamarine-abyssinian
+        - /usr/bin/env sh .sqa/script.surly-maroon-rat.sh
+        container: qc.lic_woolly-mustard-wombat
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-silver-millipede.sh
-        container: qc.met_nerdy-razzmatazz-kakapo
+        - /usr/bin/env sh .sqa/script.pasty-linen-shrimp.sh
+        container: qc.met_pasty-lemon-wolfhound
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-orange-hound.sh
-        container: qc.sec_scanty-scarlet-urchin
+        - /usr/bin/env sh .sqa/script.gimpy-azure-leopard.sh
+        container: qc.sec_wheezy-ultramarine-hedgehog
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-champagne-shrimp.sh
-        container: qc.sty_snappy-fuchsia-skunk
+        - /usr/bin/env sh .sqa/script.squirrely-gamboge-peccary.sh
+        container: qc.sty_gimpy-ochre-iguana
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-black-akbash.sh
-        container: qc.sty_crabby-viridian-moose
+        - /usr/bin/env sh .sqa/script.wimpy-plum-jackal.sh
+        container: qc.sty_shaky-apricot-kangaroo
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-pear-molly.sh
-        container: qc.sty_paltry-ecru-barnacle
+        - /usr/bin/env sh .sqa/script.flaky-gamboge-lizard.sh
+        container: qc.sty_bumpy-magnolia-ostrich
       github.com/grycap/im rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-chestnut-dhole.sh
-        container: qc.sty_flimsy-alizarin-manatee
+        - /usr/bin/env sh .sqa/script.baggy-thistle-husky.sh
+        container: qc.sty_zippy-tan-panda
       github.com/grycap/im stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-celadon-cattle.sh
-        container: qc.sty_nippy-auburn-caterpillar
+        - /usr/bin/env sh .sqa/script.snippy-maroon-barnacle.sh
+        container: qc.sty_greasy-coral-starfish
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-olive-affenpinscher.sh
-        container: qc.ver_skanky-teal-moorhen
+        - /usr/bin/env sh .sqa/script.messy-mauve-rottweiler.sh
+        container: qc.ver_gimpy-tomato-meerkat
 timeout: 1800
