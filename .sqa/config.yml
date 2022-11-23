@@ -15,70 +15,70 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-maroon-nightingale.sh
-        container: qc.acc_zippy-red-chin
+        - /usr/bin/env sh .sqa/script.cheeky-carmine-lion.sh
+        container: qc.acc_shaggy-cardinal-stoat
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-tomato-balinese.sh
-        container: qc.doc_chummy-red-opossum
+        - /usr/bin/env sh .sqa/script.boozy-orange-koala.sh
+        container: qc.doc_homely-ochre-lemming
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-ecru-discus.sh
-        container: qc.doc_crabby-green-opossum
+        - /usr/bin/env sh .sqa/script.hilly-sepia-barb.sh
+        container: qc.doc_gummy-yellow-anteater
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-teal-manatee.sh
-        container: qc.doc_zippy-cinnamon-neanderthal
+        - /usr/bin/env sh .sqa/script.thirsty-mustard-ocelot.sh
+        container: qc.doc_gamy-violet-ray
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-olive-gar.sh
-        container: qc.doc_skimpy-linen-guppy
+        - /usr/bin/env sh .sqa/script.randy-salmon-squid.sh
+        container: qc.doc_breezy-thistle-okapi
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-maroon-rat.sh
-        container: qc.lic_woolly-mustard-wombat
+        - /usr/bin/env sh .sqa/script.tasty-apricot-chimpanzee.sh
+        container: qc.lic_craggy-bronze-beetle
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-linen-shrimp.sh
-        container: qc.met_pasty-lemon-wolfhound
+        - /usr/bin/env sh .sqa/script.droopy-malachite-molly.sh
+        container: qc.met_shabby-champagne-starfish
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-azure-leopard.sh
-        container: qc.sec_wheezy-ultramarine-hedgehog
+        - /usr/bin/env sh .sqa/script.tacky-sangria-dormouse.sh
+        container: qc.sec_silly-pear-dragon
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-gamboge-peccary.sh
-        container: qc.sty_gimpy-ochre-iguana
+        - /usr/bin/env sh .sqa/script.flabby-rose-angelfish.sh
+        container: qc.sty_pasty-razzmatazz-tetra
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-plum-jackal.sh
-        container: qc.sty_shaky-apricot-kangaroo
+        - /usr/bin/env sh .sqa/script.homely-peach-turkey.sh
+        container: qc.sty_scanty-pink-peccary
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-gamboge-lizard.sh
-        container: qc.sty_bumpy-magnolia-ostrich
+        - /usr/bin/env sh .sqa/script.geeky-viridian-loon.sh
+        container: qc.sty_ugly-asparagus-rhinoceros
       github.com/grycap/im rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-thistle-husky.sh
-        container: qc.sty_zippy-tan-panda
+        - /usr/bin/env sh .sqa/script.snippy-rose-seahorse.sh
+        container: qc.sty_ready-aqua-buffalo
       github.com/grycap/im stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-maroon-barnacle.sh
-        container: qc.sty_greasy-coral-starfish
+        - /usr/bin/env sh .sqa/script.snazzy-asparagus-alligator.sh
+        container: qc.sty_gimpy-tangerine-kakapo
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-mauve-rottweiler.sh
-        container: qc.ver_gimpy-tomato-meerkat
+        - /usr/bin/env sh .sqa/script.blurry-chartreuse-bird.sh
+        container: qc.ver_hazy-carmine-ragdoll
 timeout: 1800
