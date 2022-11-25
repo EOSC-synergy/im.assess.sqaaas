@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-cinnamon-fox.sh
-        container: qc.acc_shabby-violet-antelope
+        - /usr/bin/env sh .sqa/script.snappy-black-uguisu.sh
+        container: qc.acc_greasy-apricot-bracke
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-cobalt-ragdoll.sh
-        container: qc.doc_stuffy-copper-javanese
+        - /usr/bin/env sh .sqa/script.silly-linen-peccary.sh
+        container: qc.doc_freaky-champagne-cichlid
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-bronze-owl.sh
-        container: qc.doc_snappy-sangria-dormouse
+        - /usr/bin/env sh .sqa/script.trippy-silver-dolphin.sh
+        container: qc.doc_muggy-cardinal-pinscher
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-fuchsia-uguisu.sh
-        container: qc.doc_ready-maroon-boar
+        - /usr/bin/env sh .sqa/script.leaky-aqua-fox.sh
+        container: qc.doc_muggy-amethyst-quokka
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-alizarin-paradise.sh
-        container: qc.doc_grumpy-tangerine-dogfish
+        - /usr/bin/env sh .sqa/script.sunny-corn-nightingale.sh
+        container: qc.doc_pasty-smalt-bulldog
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-amethyst-mongrel.sh
-        container: qc.lic_flabby-celadon-olm
+        - /usr/bin/env sh .sqa/script.muggy-sepia-buffalo.sh
+        container: qc.lic_leaky-heliotrope-spaniel
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-ruby-raccoon.sh
-        container: qc.met_gloppy-malachite-mongoose
+        - /usr/bin/env sh .sqa/script.muzzy-thistle-otter.sh
+        container: qc.met_shaggy-rust-bear
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-brass-panda.sh
-        container: qc.sec_woozy-malachite-ostrich
+        - /usr/bin/env sh .sqa/script.hilly-salmon-spoonbill.sh
+        container: qc.sec_crappy-lime-cassowary
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cardinal-whippet.sh
-        container: qc.sty_bluesy-burgundy-chihuahua
+        - /usr/bin/env sh .sqa/script.woolly-teal-tetra.sh
+        container: qc.sty_queasy-gamboge-fowl
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-champagne-donkey.sh
-        container: qc.sty_dorky-olivine-corgi
+        - /usr/bin/env sh .sqa/script.skinny-beige-caterpillar.sh
+        container: qc.sty_scaly-rust-deer
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-taupe-reindeer.sh
-        container: qc.sty_hasty-crimson-caracal
+        - /usr/bin/env sh .sqa/script.bumpy-heliotrope-dodo.sh
+        container: qc.sty_hazy-white-mammoth
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-rose-chipmunk.sh
-        container: qc.ver_stinky-cardinal-moose
+        - /usr/bin/env sh .sqa/script.crabby-brown-akita.sh
+        container: qc.ver_snappy-alizarin-dolphin
 timeout: 1800
