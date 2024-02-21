@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-champagne-wombat.sh
-        container: qc.acc_paltry-corn-avocet
+        - /usr/bin/env sh .sqa/script.wheezy-mauve-cuscus.sh
+        container: qc.acc_messy-denim-whippet
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-aquamarine-woodlouse.sh
-        container: qc.doc_snoopy-gold-dolphin
+        - /usr/bin/env sh .sqa/script.shabby-plum-bird.sh
+        container: qc.doc_craggy-jade-crocodile
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-yellow-chimpanzee.sh
-        container: qc.doc_snippy-orchid-quetzal
+        - /usr/bin/env sh .sqa/script.sickly-pear-capuchin.sh
+        container: qc.doc_snippy-aquamarine-mongrel
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-chocolate-wombat.sh
-        container: qc.lic_paltry-cinnabar-wallaby
+        - /usr/bin/env sh .sqa/script.bumpy-linen-husky.sh
+        container: qc.lic_pasty-orchid-catfish
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-scarlet-urchin.sh
-        container: qc.ver_hilly-denim-rattlesnake
+        - /usr/bin/env sh .sqa/script.baggy-amber-alligator.sh
+        container: qc.ver_snoopy-taupe-coati
 timeout: 5400
