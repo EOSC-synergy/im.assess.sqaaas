@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: master
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-mauve-cuscus.sh
-        container: qc.acc_messy-denim-whippet
+        - /usr/bin/env sh .sqa/script.shabby-ultramarine-malamute.sh
+        container: qc.acc_grumpy-cream-ferret
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-plum-bird.sh
-        container: qc.doc_craggy-jade-crocodile
+        - /usr/bin/env sh .sqa/script.scanty-persimmon-dog.sh
+        container: qc.doc_hilly-silver-macaque
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-pear-capuchin.sh
-        container: qc.doc_snippy-aquamarine-mongrel
+        - /usr/bin/env sh .sqa/script.stealthy-peach-monster.sh
+        container: qc.doc_goopy-burgundy-bracke
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-linen-husky.sh
-        container: qc.lic_pasty-orchid-catfish
+        - /usr/bin/env sh .sqa/script.flaky-cyan-wrasse.sh
+        container: qc.lic_stealthy-salmon-forest
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-amber-alligator.sh
-        container: qc.ver_snoopy-taupe-coati
+        - /usr/bin/env sh .sqa/script.gloppy-eggplant-bandicoot.sh
+        container: qc.ver_lanky-indigo-termite
 timeout: 5400
