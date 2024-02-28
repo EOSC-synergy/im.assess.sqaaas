@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-puce-retriever.sh
-        container: qc.acc_squeaky-goldenrod-quokka
+        - /usr/bin/env sh .sqa/script.shaggy-buff-echidna.sh
+        container: qc.acc_gimpy-olivine-impala
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-buff-dhole.sh
-        container: qc.doc_blurry-alizarin-ragdoll
+        - /usr/bin/env sh .sqa/script.geeky-sepia-caiman.sh
+        container: qc.doc_snoopy-ruby-butterfly
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-silver-rattlesnake.sh
-        container: qc.doc_freaky-maroon-mouse
+        - /usr/bin/env sh .sqa/script.paltry-gold-burmese.sh
+        container: qc.doc_hasty-grey-cougar
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-corn-tuatara.sh
-        container: qc.lic_flimsy-peach-newt
+        - /usr/bin/env sh .sqa/script.gloppy-yellow-fousek.sh
+        container: qc.lic_homey-scarlet-javanese
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-cinnabar-cougar.sh
-        container: qc.ver_homely-razzmatazz-moose
+        - /usr/bin/env sh .sqa/script.queasy-salmon-zorse.sh
+        container: qc.ver_zippy-yellow-ostrich
 timeout: 5400
