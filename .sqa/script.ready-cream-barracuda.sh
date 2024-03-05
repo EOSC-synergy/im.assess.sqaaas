@@ -5,5 +5,6 @@
 
 (
 cd github.com/grycap/im &&
+    pip install tox&&
     tox -e py3
 )
