@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-magenta-giraffe.sh
-        container: qc.acc_frumpy-cinnamon-malamute
+        - /usr/bin/env sh .sqa/script.crappy-orchid-reindeer.sh
+        container: qc.acc_pretty-viridian-hyrax
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-wheat-beaver.sh
-        container: qc.doc_blurry-indigo-serval
+        - /usr/bin/env sh .sqa/script.ready-azure-baboon.sh
+        container: qc.doc_sleepy-lavender-wolfhound
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-beige-tortoise.sh
-        container: qc.doc_bluesy-carmine-opossum
+        - /usr/bin/env sh .sqa/script.freaky-firebrick-heron.sh
+        container: qc.doc_cloudy-pumpkin-affenpinscher
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-green-hummingbird.sh
-        container: qc.doc_snoopy-black-shrew
+        - /usr/bin/env sh .sqa/script.surly-rose-seal.sh
+        container: qc.doc_baggy-seashell-liger
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-rust-bear.sh
-        container: qc.doc_chewy-salmon-mastiff
+        - /usr/bin/env sh .sqa/script.blurry-ecru-mule.sh
+        container: qc.doc_snazzy-green-manatee
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-flax-frog.sh
-        container: qc.lic_seedy-salmon-koala
+        - /usr/bin/env sh .sqa/script.ugly-red-tzu.sh
+        container: qc.lic_fuzzy-seashell-dragon
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-corn-tiger.sh
-        container: qc.met_dorky-myrtle-tiger
+        - /usr/bin/env sh .sqa/script.gummy-saffron-turtle.sh
+        container: qc.met_pokey-pumpkin-vole
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-seashell-olm.sh
-        container: qc.sec_jumpy-gold-indri
+        - /usr/bin/env sh .sqa/script.messy-teal-jackal.sh
+        container: qc.sec_smelly-beige-bullfrog
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-cinnabar-penguin.sh
-        container: qc.sty_greasy-brass-chipmunk
+        - /usr/bin/env sh .sqa/script.crappy-viridian-ragdoll.sh
+        container: qc.sty_woolly-corn-beetle
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-grey-centipede.sh
-        container: qc.sty_sleazy-buff-clam
+        - /usr/bin/env sh .sqa/script.muzzy-aqua-akita.sh
+        container: qc.sty_pretty-burgundy-badger
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-smalt-lemur.sh
-        container: qc.sty_wiggy-magenta-eleuth
+        - /usr/bin/env sh .sqa/script.jumpy-denim-crane.sh
+        container: qc.sty_lousy-coral-weasel
   QC.Uni:
     repos:
       github.com/grycap/im commands:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-buff-bear.sh
-        container: qc.uni_crabby-yellow-schnauzer
+        - /usr/bin/env sh .sqa/script.woozy-magenta-goose.sh
+        container: qc.uni_queasy-fuchsia-bombay
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-coral-rhinoceros.sh
-        container: qc.ver_crabby-maroon-squid
+        - /usr/bin/env sh .sqa/script.gimpy-pink-hyena.sh
+        container: qc.ver_muzzy-aquamarine-hyena
 timeout: 5400

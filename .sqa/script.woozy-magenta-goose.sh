@@ -5,5 +5,7 @@
 
 (
 cd github.com/grycap/im &&
-    pip install tox && tox -e py3
+    micromamba install -c conda-forge python=3.10 tox -y&&
+    micromamba activate base&&
+    tox -e py3
 )
