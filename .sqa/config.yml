@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/fair-epos-prototype
+      branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: master
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-sepia-dogfish.sh
-        container: qc.acc_chewy-firebrick-donkey
+        - /usr/bin/env sh .sqa/script.dorky-salmon-starfish.sh
+        container: qc.acc_hilly-lavender-indri
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-pumpkin-ocelot.sh
-        container: qc.doc_hazy-chestnut-dolphin
+        - /usr/bin/env sh .sqa/script.lanky-rust-walrus.sh
+        container: qc.doc_cranky-olive-oyster
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-bronze-greyhound.sh
-        container: qc.doc_shaggy-pumpkin-moose
+        - /usr/bin/env sh .sqa/script.gimpy-apricot-caterpillar.sh
+        container: qc.doc_beady-russet-clam
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-magenta-bat.sh
-        container: qc.doc_boozy-aqua-capuchin
+        - /usr/bin/env sh .sqa/script.flabby-olive-gorilla.sh
+        container: qc.doc_stuffy-lemon-rattlesnake
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-apricot-gharial.sh
-        container: qc.doc_pokey-teal-squirt
+        - /usr/bin/env sh .sqa/script.foggy-silver-barb.sh
+        container: qc.doc_ready-carmine-salamander
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-jade-butterfly.sh
-        container: qc.lic_baggy-myrtle-caterpillar
+        - /usr/bin/env sh .sqa/script.baggy-dandelion-mayfly.sh
+        container: qc.lic_sloppy-ultramarine-chinook
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-white-kingfisher.sh
-        container: qc.met_wiggy-magenta-lynx
+        - /usr/bin/env sh .sqa/script.hasty-chestnut-hyrax.sh
+        container: qc.met_lovely-myrtle-jaguar
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-pink-binturong.sh
-        container: qc.sec_squeaky-seashell-dolphin
+        - /usr/bin/env sh .sqa/script.freaky-lemon-hare.sh
+        container: qc.sec_scaly-cinnabar-mau
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-malachite-ladybird.sh
-        container: qc.sty_queasy-plum-tortoise
+        - /usr/bin/env sh .sqa/script.wiggy-maroon-kakapo.sh
+        container: qc.sty_scanty-myrtle-robin
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-eggplant-paradise.sh
-        container: qc.sty_squeaky-peach-buzzard
+        - /usr/bin/env sh .sqa/script.lanky-zucchini-kakapo.sh
+        container: qc.sty_frumpy-orange-wolf
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-tangerine-burmese.sh
-        container: qc.sty_squeaky-cobalt-heron
+        - /usr/bin/env sh .sqa/script.blurry-olive-lynx.sh
+        container: qc.sty_goopy-tomato-chipmunk
   QC.Uni:
     repos:
       github.com/grycap/im pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-chestnut-wallaby.sh
-        container: qc.uni_sickly-alizarin-turkey
+        - /usr/bin/env sh .sqa/script.pokey-cerise-toad.sh
+        container: qc.uni_wiggy-xanthic-cockroach
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-blue-sparrow.sh
-        container: qc.ver_hilly-denim-meerkat
+        - /usr/bin/env sh .sqa/script.scummy-azure-civet.sh
+        container: qc.ver_baggy-aquamarine-koala
 timeout: 5400
