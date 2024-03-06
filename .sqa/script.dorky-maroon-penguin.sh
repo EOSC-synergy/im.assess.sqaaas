@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    tox -e pytest
+    tox -c tox.ini -e
 )
