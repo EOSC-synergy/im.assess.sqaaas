@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    tox -c tox.ini -e pytest
+    tox -c tox.ini -e coverage
 )
