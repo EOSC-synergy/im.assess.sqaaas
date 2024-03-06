@@ -5,6 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    pip install -r requirements.txt&&
-    pytest -sv
+    tox -e pytest
 )
