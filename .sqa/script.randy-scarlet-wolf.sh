@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    pytest tests --json-report  --json-report-indent 4
+    pytest  --json-report  --json-report-indent 4
 )
