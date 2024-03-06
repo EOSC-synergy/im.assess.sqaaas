@@ -5,5 +5,6 @@
 
 (
 cd github.com/grycap/im &&
-    pytest  --json-report  --json-report-indent 4
+    pip install -r requirements.txt&&
+    pytest -sv
 )
