@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/fair-epos-prototype
+      branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-peach-angora.sh
-        container: qc.acc_chummy-mustard-manatee
+        - /usr/bin/env sh .sqa/script.shaggy-salmon-rat.sh
+        container: qc.acc_crappy-tan-quoll
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-amber-duck.sh
-        container: qc.doc_skanky-magenta-rottweiler
+        - /usr/bin/env sh .sqa/script.blurry-tangerine-camel.sh
+        container: qc.doc_scummy-auburn-gharial
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-vermilion-kiwi.sh
-        container: qc.doc_surly-apricot-audemer
+        - /usr/bin/env sh .sqa/script.gummy-lemon-chin.sh
+        container: qc.doc_baggy-flax-butterfly
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-chocolate-tamarin.sh
-        container: qc.doc_bluesy-viridian-cassowary
+        - /usr/bin/env sh .sqa/script.chummy-tangerine-tzu.sh
+        container: qc.doc_squirrely-denim-moose
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-bronze-wrasse.sh
-        container: qc.doc_stinky-mauve-bear
+        - /usr/bin/env sh .sqa/script.bluesy-bistre-markhor.sh
+        container: qc.doc_cranky-linen-starfish
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-plum-lynx.sh
-        container: qc.lic_homey-cobalt-fossa
+        - /usr/bin/env sh .sqa/script.sickly-magenta-goose.sh
+        container: qc.lic_wiggy-corn-chamois
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-olivine-shark.sh
-        container: qc.met_scanty-viridian-eel
+        - /usr/bin/env sh .sqa/script.hasty-ochre-terrier.sh
+        container: qc.met_blurry-ultramarine-baboon
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-plum-retriever.sh
-        container: qc.sec_muggy-lemon-crocodile
+        - /usr/bin/env sh .sqa/script.goopy-amaranth-tiger.sh
+        container: qc.sec_tacky-alizarin-dolphin
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-ultramarine-bandicoot.sh
-        container: qc.sty_gamy-plum-caracal
+        - /usr/bin/env sh .sqa/script.freaky-chartreuse-kudu.sh
+        container: qc.sty_lumpy-lemon-bonobo
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-heliotrope-beagle.sh
-        container: qc.sty_chummy-harlequin-chinchilla
+        - /usr/bin/env sh .sqa/script.clammy-peach-ladybird.sh
+        container: qc.sty_breezy-ivory-kingfisher
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-cobalt-avocet.sh
-        container: qc.sty_tasty-saffron-crocodile
+        - /usr/bin/env sh .sqa/script.shaky-harlequin-ocelot.sh
+        container: qc.sty_flimsy-lilac-blue
   QC.Uni:
     repos:
       github.com/grycap/im commands:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-cardinal-boar.sh
-        container: qc.uni_messy-burgundy-vole
+        - /usr/bin/env sh .sqa/script.stinky-malachite-neanderthal.sh
+        container: qc.uni_crappy-taupe-javanese
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-yellow-elephant.sh
-        container: qc.ver_bumpy-jade-neanderthal
+        - /usr/bin/env sh .sqa/script.nippy-purple-tetra.sh
+        container: qc.ver_trippy-gold-hedgehog
 timeout: 5400
