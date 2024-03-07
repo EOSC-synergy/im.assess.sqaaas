@@ -15,80 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-periwinkle-whippet.sh
-        container: qc.acc_stealthy-seashell-kiwi
+        - /usr/bin/env sh .sqa/script.goopy-magenta-starfish.sh
+        container: qc.acc_nippy-black-woodlouse
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-teal-avocet.sh
-        container: qc.doc_craggy-charcoal-dollar
+        - /usr/bin/env sh .sqa/script.pasty-sepia-spider.sh
+        container: qc.doc_whiny-chocolate-ant
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-vermilion-cattle.sh
-        container: qc.doc_pokey-crimson-tuatara
+        - /usr/bin/env sh .sqa/script.sloppy-puce-barb.sh
+        container: qc.doc_frumpy-buff-skunk
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-lemon-worm.sh
-        container: qc.doc_woozy-saffron-gharial
+        - /usr/bin/env sh .sqa/script.seedy-pumpkin-dugong.sh
+        container: qc.doc_hilly-chocolate-goose
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-indigo-setter.sh
-        container: qc.doc_homely-carmine-moth
-      github.com/grycap/im tox:
-        commands:
-        - /usr/bin/env sh .sqa/script.ready-rose-moorhen.sh
-        container: qc.doc_crabby-corn-beaver
+        - /usr/bin/env sh .sqa/script.shaky-amethyst-dogfish.sh
+        container: qc.doc_ready-saffron-squid
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-asparagus-mau.sh
-        container: qc.lic_randy-peach-foxhound
+        - /usr/bin/env sh .sqa/script.lovely-charcoal-dolphin.sh
+        container: qc.lic_hasty-emerald-camel
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-yellow-gibbon.sh
-        container: qc.met_jumpy-charcoal-lion
+        - /usr/bin/env sh .sqa/script.hasty-rust-russel.sh
+        container: qc.met_frumpy-carmine-dolphin
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cornflower-tamarin.sh
-        container: qc.sec_snoopy-orange-gopher
-      github.com/grycap/im tox:
-        commands:
-        - /usr/bin/env sh .sqa/script.hasty-puce-bracke.sh
-        container: qc.sec_slaphappy-dandelion-bonobo
+        - /usr/bin/env sh .sqa/script.muzzy-smalt-barnacle.sh
+        container: qc.sec_scummy-firebrick-quoll
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-malachite-mau.sh
-        container: qc.sty_freaky-orange-chicken
+        - /usr/bin/env sh .sqa/script.gimpy-xanthic-frise.sh
+        container: qc.sty_sleepy-indigo-abyssinian
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-russet-squid.sh
-        container: qc.sty_surly-emerald-dog
+        - /usr/bin/env sh .sqa/script.snappy-mustard-uguisu.sh
+        container: qc.sty_goopy-green-argentino
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-pink-devil.sh
-        container: qc.sty_leaky-alizarin-lizard
-      github.com/grycap/im tox:
-        commands:
-        - /usr/bin/env sh .sqa/script.snippy-brown-corgi.sh
-        container: qc.sty_boozy-silver-clam
+        - /usr/bin/env sh .sqa/script.tacky-flax-chicken.sh
+        container: qc.sty_nerdy-mauve-falcon
   QC.Uni:
     repos:
       github.com/grycap/im tox:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-rust-quetzal.sh
-        container: qc.uni_craggy-scarlet-leopard
+        - /usr/bin/env sh .sqa/script.sunny-fuchsia-opossum.sh
+        container: qc.uni_surly-mauve-bison
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-razzmatazz-beetle.sh
-        container: qc.ver_wimpy-tomato-hamster
+        - /usr/bin/env sh .sqa/script.wheezy-blue-moose.sh
+        container: qc.ver_gummy-bronze-leopard
 timeout: 5400
