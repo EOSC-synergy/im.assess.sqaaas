@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    tox -c tox.ini -e coverage
+    pytest  --json-report  --json-report-indent 4
 )
