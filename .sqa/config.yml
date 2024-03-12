@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: 2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-salmon-rat.sh
-        container: qc.acc_crappy-tan-quoll
+        - /usr/bin/env sh .sqa/script.gloppy-blue-dolphin.sh
+        container: qc.acc_tacky-amber-wolverine
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-tangerine-camel.sh
-        container: qc.doc_scummy-auburn-gharial
+        - /usr/bin/env sh .sqa/script.clammy-viridian-beetle.sh
+        container: qc.doc_crabby-scarlet-maltese
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-lemon-chin.sh
-        container: qc.doc_baggy-flax-butterfly
+        - /usr/bin/env sh .sqa/script.surly-champagne-llama.sh
+        container: qc.doc_chewy-khaki-indri
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-tangerine-tzu.sh
-        container: qc.doc_squirrely-denim-moose
+        - /usr/bin/env sh .sqa/script.queasy-sapphire-monkey.sh
+        container: qc.doc_chewy-sepia-bird
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-bistre-markhor.sh
-        container: qc.doc_cranky-linen-starfish
+        - /usr/bin/env sh .sqa/script.sloppy-scarlet-hound.sh
+        container: qc.doc_sleazy-tan-turkey
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-magenta-goose.sh
-        container: qc.lic_wiggy-corn-chamois
+        - /usr/bin/env sh .sqa/script.wheezy-fuchsia-woodpecker.sh
+        container: qc.lic_sleepy-burgundy-hare
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-ochre-terrier.sh
-        container: qc.met_blurry-ultramarine-baboon
+        - /usr/bin/env sh .sqa/script.gloppy-lilac-yak.sh
+        container: qc.met_stuffy-azure-cichlid
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-amaranth-tiger.sh
-        container: qc.sec_tacky-alizarin-dolphin
+        - /usr/bin/env sh .sqa/script.seedy-aquamarine-chipmunk.sh
+        container: qc.sec_squeaky-gold-beaver
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-chartreuse-kudu.sh
-        container: qc.sty_lumpy-lemon-bonobo
+        - /usr/bin/env sh .sqa/script.shaky-ecru-fish.sh
+        container: qc.sty_squeaky-magnolia-tortoise
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-peach-ladybird.sh
-        container: qc.sty_breezy-ivory-kingfisher
+        - /usr/bin/env sh .sqa/script.sunny-rose-urchin.sh
+        container: qc.sty_skanky-cerulean-oyster
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-harlequin-ocelot.sh
-        container: qc.sty_flimsy-lilac-blue
+        - /usr/bin/env sh .sqa/script.trippy-auburn-spider.sh
+        container: qc.sty_snappy-eggplant-termite
   QC.Uni:
     repos:
-      github.com/grycap/im commands:
+      github.com/grycap/im tox:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-malachite-neanderthal.sh
-        container: qc.uni_crappy-taupe-javanese
+        - /usr/bin/env sh .sqa/script.stinky-firebrick-peccary.sh
+        container: qc.uni_frumpy-gold-moorhen
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-purple-tetra.sh
-        container: qc.ver_trippy-gold-hedgehog
+        - /usr/bin/env sh .sqa/script.zippy-cornflower-hornet.sh
+        container: qc.ver_tacky-maroon-budgerigar
 timeout: 5400
