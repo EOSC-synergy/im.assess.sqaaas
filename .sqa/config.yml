@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 2.0.0
+      branch: release/2.1.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-wisteria-cheetah.sh
-        container: qc.acc_cozy-white-goat
+        - /usr/bin/env sh .sqa/script.lousy-lemon-chow.sh
+        container: qc.acc_slimy-corn-wolverine
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-carmine-snake.sh
-        container: qc.doc_baggy-celadon-chinchilla
+        - /usr/bin/env sh .sqa/script.lousy-cerulean-turkey.sh
+        container: qc.doc_flaky-charcoal-havanese
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-scarlet-lion.sh
-        container: qc.doc_homey-chestnut-hornet
+        - /usr/bin/env sh .sqa/script.slaphappy-chocolate-eleuth.sh
+        container: qc.doc_pokey-chocolate-foxhound
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-lilac-chimpanzee.sh
-        container: qc.doc_frumpy-maroon-seal
+        - /usr/bin/env sh .sqa/script.sleepy-lilac-bonobo.sh
+        container: qc.doc_crappy-amber-robin
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-cerise-snail.sh
-        container: qc.doc_seedy-red-ibis
+        - /usr/bin/env sh .sqa/script.pretty-periwinkle-birman.sh
+        container: qc.doc_freaky-chestnut-harrier
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-green-tuatara.sh
-        container: qc.lic_hasty-orchid-nightingale
+        - /usr/bin/env sh .sqa/script.scanty-lavender-greyhound.sh
+        container: qc.lic_chewy-apricot-burmese
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-chocolate-devil.sh
-        container: qc.met_bumpy-white-quetzal
+        - /usr/bin/env sh .sqa/script.snoopy-red-fish.sh
+        container: qc.met_zippy-scarlet-gorilla
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-sapphire-bandicoot.sh
-        container: qc.sec_sickly-lilac-baboon
+        - /usr/bin/env sh .sqa/script.gimpy-mustard-dragon.sh
+        container: qc.sec_sleazy-cornflower-coyote
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-cream-molly.sh
-        container: qc.sty_jumpy-smalt-russel
+        - /usr/bin/env sh .sqa/script.hasty-cerise-donkey.sh
+        container: qc.sty_lumpy-indigo-fly
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-emerald-goose.sh
-        container: qc.sty_chummy-platinum-stoat
+        - /usr/bin/env sh .sqa/script.foggy-fuchsia-tarantula.sh
+        container: qc.sty_scanty-cinnamon-moth
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-cinnamon-gharial.sh
-        container: qc.sty_snoopy-orange-frigatebird
+        - /usr/bin/env sh .sqa/script.gummy-chocolate-gar.sh
+        container: qc.sty_sunny-sangria-sloth
   QC.Uni:
     repos:
       github.com/grycap/im tox:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-sangria-salamander.sh
-        container: qc.uni_bumpy-zucchini-squirrel
+        - /usr/bin/env sh .sqa/script.slimy-zucchini-gecko.sh
+        container: qc.uni_queasy-chocolate-rottweiler
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-aquamarine-kingfisher.sh
-        container: qc.ver_sloppy-thistle-insect
+        - /usr/bin/env sh .sqa/script.trippy-pumpkin-dog.sh
+        container: qc.ver_fuzzy-turquoise-sheepdog
 timeout: 5400
