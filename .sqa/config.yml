@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.1.0
+      branch: release/2.1.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-lemon-chow.sh
-        container: qc.acc_slimy-corn-wolverine
+        - /usr/bin/env sh .sqa/script.gamy-scarlet-hound.sh
+        container: qc.acc_muggy-rust-fousek
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-cerulean-turkey.sh
-        container: qc.doc_flaky-charcoal-havanese
+        - /usr/bin/env sh .sqa/script.jumpy-heliotrope-squirt.sh
+        container: qc.doc_geeky-mustard-magpie
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-chocolate-eleuth.sh
-        container: qc.doc_pokey-chocolate-foxhound
+        - /usr/bin/env sh .sqa/script.lousy-ecru-lobster.sh
+        container: qc.doc_pokey-orchid-cow
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-lilac-bonobo.sh
-        container: qc.doc_crappy-amber-robin
+        - /usr/bin/env sh .sqa/script.gimpy-cream-salamander.sh
+        container: qc.doc_muggy-cornflower-beagle
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-periwinkle-birman.sh
-        container: qc.doc_freaky-chestnut-harrier
+        - /usr/bin/env sh .sqa/script.squirrely-peach-slug.sh
+        container: qc.doc_clammy-purple-eagle
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-lavender-greyhound.sh
-        container: qc.lic_chewy-apricot-burmese
+        - /usr/bin/env sh .sqa/script.frumpy-corn-crane.sh
+        container: qc.lic_sleazy-rose-peccary
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-red-fish.sh
-        container: qc.met_zippy-scarlet-gorilla
+        - /usr/bin/env sh .sqa/script.cranky-bistre-pig.sh
+        container: qc.met_lovely-auburn-llama
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-mustard-dragon.sh
-        container: qc.sec_sleazy-cornflower-coyote
+        - /usr/bin/env sh .sqa/script.surly-celadon-dragon.sh
+        container: qc.sec_lumpy-cornflower-clam
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-cerise-donkey.sh
-        container: qc.sty_lumpy-indigo-fly
+        - /usr/bin/env sh .sqa/script.slaphappy-lemon-deer.sh
+        container: qc.sty_stinky-myrtle-tiger
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-fuchsia-tarantula.sh
-        container: qc.sty_scanty-cinnamon-moth
+        - /usr/bin/env sh .sqa/script.hilly-flax-ladybird.sh
+        container: qc.sty_jumpy-asparagus-echidna
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-chocolate-gar.sh
-        container: qc.sty_sunny-sangria-sloth
+        - /usr/bin/env sh .sqa/script.flabby-chocolate-bulldog.sh
+        container: qc.sty_flaky-linen-saola
   QC.Uni:
     repos:
       github.com/grycap/im tox:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-zucchini-gecko.sh
-        container: qc.uni_queasy-chocolate-rottweiler
+        - /usr/bin/env sh .sqa/script.randy-crimson-salamander.sh
+        container: qc.uni_tacky-cerulean-spaniel
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-pumpkin-dog.sh
-        container: qc.ver_fuzzy-turquoise-sheepdog
+        - /usr/bin/env sh .sqa/script.greasy-beige-capuchin.sh
+        container: qc.ver_stealthy-malachite-chihuahua
 timeout: 5400
