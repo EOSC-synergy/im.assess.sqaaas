@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: release/2.0.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: master
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-cerise-fly.sh
-        container: qc.acc_skinny-wheat-civet
+        - /usr/bin/env sh .sqa/script.wiggy-mauve-drever.sh
+        container: qc.acc_cozy-peach-tetra
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-emerald-shrimp.sh
-        container: qc.doc_squeaky-bistre-dog
+        - /usr/bin/env sh .sqa/script.smelly-bronze-wallaby.sh
+        container: qc.doc_nippy-ultramarine-kangaroo
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-smalt-llama.sh
-        container: qc.doc_greasy-buff-gorilla
+        - /usr/bin/env sh .sqa/script.flimsy-peach-drever.sh
+        container: qc.doc_woozy-red-horse
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-tomato-dhole.sh
-        container: qc.doc_cranky-chartreuse-cat
+        - /usr/bin/env sh .sqa/script.cozy-puce-angora.sh
+        container: qc.doc_woolly-tan-squid
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-peach-hippopotamus.sh
-        container: qc.doc_chewy-cyan-goose
+        - /usr/bin/env sh .sqa/script.squeaky-cobalt-sponge.sh
+        container: qc.doc_droopy-amaranth-dachshund
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-green-butterfly.sh
-        container: qc.lic_blurry-sapphire-capuchin
+        - /usr/bin/env sh .sqa/script.sleepy-white-bee.sh
+        container: qc.lic_craggy-ruby-eleuth
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-platinum-donkey.sh
-        container: qc.met_nerdy-aqua-impala
+        - /usr/bin/env sh .sqa/script.gloppy-alizarin-hamster.sh
+        container: qc.met_clammy-yellow-civet
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-teal-walrus.sh
-        container: qc.sec_droopy-apricot-scorpion
+        - /usr/bin/env sh .sqa/script.lanky-grey-alligator.sh
+        container: qc.sec_gloppy-burgundy-bonobo
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-cinnamon-penguin.sh
-        container: qc.sty_queasy-salmon-frigatebird
+        - /usr/bin/env sh .sqa/script.lanky-carmine-caracal.sh
+        container: qc.sty_randy-burgundy-donkey
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-ochre-eleuth.sh
-        container: qc.sty_tasty-seashell-angelfish
+        - /usr/bin/env sh .sqa/script.nippy-vermilion-salamander.sh
+        container: qc.sty_cheeky-cinnabar-beaver
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-tangerine-penguin.sh
-        container: qc.sty_gummy-goldenrod-vulture
+        - /usr/bin/env sh .sqa/script.skanky-russet-newfoundland.sh
+        container: qc.sty_slimy-tan-wombat
   QC.Uni:
     repos:
       github.com/grycap/im pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-rose-chamois.sh
-        container: qc.uni_tasty-eggplant-jaguar
+        - /usr/bin/env sh .sqa/script.squirrely-chocolate-falcon.sh
+        container: qc.uni_woozy-sangria-vulture
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-firebrick-seahorse.sh
-        container: qc.ver_chummy-myrtle-chamois
+        - /usr/bin/env sh .sqa/script.shaky-tomato-paradise.sh
+        container: qc.ver_wiggy-sangria-vole
 timeout: 5400
