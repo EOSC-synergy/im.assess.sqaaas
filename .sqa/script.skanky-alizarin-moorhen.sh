@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    tox -c tox.ini -e
+    tox -c tox.ini -e py3
 )
