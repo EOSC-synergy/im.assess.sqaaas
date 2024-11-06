@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    mdl --json .
+    git rev-parse --is-inside-work-tree 
 )

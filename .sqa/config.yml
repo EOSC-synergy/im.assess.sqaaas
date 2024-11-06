@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: master
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-mauve-drever.sh
-        container: qc.acc_cozy-peach-tetra
+        - /usr/bin/env sh .sqa/script.whiny-yellow-mouse.sh
+        container: qc.acc_craggy-asparagus-retriever
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-bronze-wallaby.sh
-        container: qc.doc_nippy-ultramarine-kangaroo
+        - /usr/bin/env sh .sqa/script.cranky-asparagus-lionfish.sh
+        container: qc.doc_nippy-brown-harrier
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-peach-drever.sh
-        container: qc.doc_woozy-red-horse
+        - /usr/bin/env sh .sqa/script.gamy-silver-vulture.sh
+        container: qc.doc_sleazy-xanthic-moose
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-puce-angora.sh
-        container: qc.doc_woolly-tan-squid
+        - /usr/bin/env sh .sqa/script.slaphappy-pink-coral.sh
+        container: qc.doc_dorky-xanthic-chamois
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-cobalt-sponge.sh
-        container: qc.doc_droopy-amaranth-dachshund
+        - /usr/bin/env sh .sqa/script.randy-flax-harrier.sh
+        container: qc.doc_muzzy-green-wrasse
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-white-bee.sh
-        container: qc.lic_craggy-ruby-eleuth
+        - /usr/bin/env sh .sqa/script.freaky-olivine-lion.sh
+        container: qc.lic_squirrely-cream-retriever
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-alizarin-hamster.sh
-        container: qc.met_clammy-yellow-civet
+        - /usr/bin/env sh .sqa/script.pasty-russet-bloodhound.sh
+        container: qc.met_randy-ultramarine-tarsier
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-grey-alligator.sh
-        container: qc.sec_gloppy-burgundy-bonobo
+        - /usr/bin/env sh .sqa/script.tacky-cobalt-chin.sh
+        container: qc.sec_tasty-sangria-eleuth
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-carmine-caracal.sh
-        container: qc.sty_randy-burgundy-donkey
+        - /usr/bin/env sh .sqa/script.scaly-sangria-retriever.sh
+        container: qc.sty_cozy-smalt-bonobo
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-vermilion-salamander.sh
-        container: qc.sty_cheeky-cinnabar-beaver
+        - /usr/bin/env sh .sqa/script.trippy-buff-ladybird.sh
+        container: qc.sty_tacky-ultramarine-anteater
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-russet-newfoundland.sh
-        container: qc.sty_slimy-tan-wombat
+        - /usr/bin/env sh .sqa/script.lovely-russet-sponge.sh
+        container: qc.sty_muggy-magenta-russel
   QC.Uni:
     repos:
-      github.com/grycap/im pytest:
+      github.com/grycap/im tox:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-chocolate-falcon.sh
-        container: qc.uni_woozy-sangria-vulture
+        - /usr/bin/env sh .sqa/script.jumpy-silver-flounder.sh
+        container: qc.uni_gamy-olive-greyhound
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-tomato-paradise.sh
-        container: qc.ver_wiggy-sangria-vole
+        - /usr/bin/env sh .sqa/script.leaky-bronze-hound.sh
+        container: qc.ver_crappy-viridian-buzzard
 timeout: 5400
