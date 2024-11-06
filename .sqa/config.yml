@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
-      branch: master
+      branch: v1.17.1-1
       repo: https://github.com/grycap/im
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-olivine-quoll.sh
-        container: qc.acc_baggy-heliotrope-vulture
+        - /usr/bin/env sh .sqa/script.chewy-celadon-mole.sh
+        container: qc.acc_cheeky-grey-hound
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-dandelion-tiger.sh
-        container: qc.doc_craggy-ochre-wildebeest
+        - /usr/bin/env sh .sqa/script.wiggy-gamboge-termite.sh
+        container: qc.doc_scummy-rust-spaniel
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cerise-manatee.sh
-        container: qc.doc_beady-mauve-mule
+        - /usr/bin/env sh .sqa/script.gummy-charcoal-raccoon.sh
+        container: qc.doc_bluesy-wisteria-kangaroo
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-brown-vole.sh
-        container: qc.doc_queasy-chocolate-bongo
+        - /usr/bin/env sh .sqa/script.nerdy-pink-fousek.sh
+        container: qc.doc_gamy-gold-rattlesnake
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-coral-echidna.sh
-        container: qc.doc_shabby-crimson-abyssinian
+        - /usr/bin/env sh .sqa/script.thirsty-carmine-javanese.sh
+        container: qc.doc_skanky-black-capuchin
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-eggplant-macaque.sh
-        container: qc.lic_messy-razzmatazz-impala
+        - /usr/bin/env sh .sqa/script.muzzy-coral-quetzal.sh
+        container: qc.lic_hazy-malachite-moorhen
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-mustard-boar.sh
-        container: qc.met_lovely-emerald-caterpillar
+        - /usr/bin/env sh .sqa/script.jumpy-gamboge-chicken.sh
+        container: qc.met_skanky-apricot-kingfisher
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-violet-turtle.sh
-        container: qc.sec_cranky-buff-burmese
+        - /usr/bin/env sh .sqa/script.whiny-cinnamon-sponge.sh
+        container: qc.sec_snappy-mustard-crab
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-pumpkin-quail.sh
-        container: qc.sty_dorky-chartreuse-chin
+        - /usr/bin/env sh .sqa/script.messy-magenta-tuatara.sh
+        container: qc.sty_snippy-indigo-tortoise
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-violet-reindeer.sh
-        container: qc.sty_lousy-firebrick-chow
+        - /usr/bin/env sh .sqa/script.crabby-rust-bee.sh
+        container: qc.sty_gummy-lime-tetra
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-mustard-dog.sh
-        container: qc.sty_breezy-pink-bongo
+        - /usr/bin/env sh .sqa/script.slimy-orchid-woodlouse.sh
+        container: qc.sty_stuffy-persimmon-paradise
+  QC.Uni:
+    repos:
+      github.com/grycap/im tox:
+        commands:
+        - /usr/bin/env sh .sqa/script.greasy-brass-quail.sh
+        container: qc.uni_shaggy-cerulean-macaque
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-mustard-quoll.sh
-        container: qc.ver_gimpy-salmon-swan
+        - /usr/bin/env sh .sqa/script.clammy-seashell-fox.sh
+        container: qc.ver_hazy-denim-fousek
 timeout: 5400
