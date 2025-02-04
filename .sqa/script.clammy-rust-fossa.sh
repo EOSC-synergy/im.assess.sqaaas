@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    hadolint docker-devel/Dockerfile docker-py3/Dockerfile monitoring/Dockerfile --failure-threshold error
+    pytest  --json-report  --json-report-indent 4
 )
