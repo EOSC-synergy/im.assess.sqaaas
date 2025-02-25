@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/grycap/im &&
-    git rev-parse --is-inside-work-tree 
+cd www &&
+    rst-lint --level warning --format json .
 )

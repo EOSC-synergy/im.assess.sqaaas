@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/grycap/im &&
-    jsonlint-cli "**/*.json"
+cd www &&
+    find_doc_files.py --file_type all
 )
