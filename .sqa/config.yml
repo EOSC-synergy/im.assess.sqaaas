@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
-      branch: master
+      branch: v1.18.0
       repo: https://github.com/grycap/im
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-olivine-quoll.sh
-        container: qc.acc_baggy-heliotrope-vulture
+        - /usr/bin/env sh .sqa/script.cheeky-jade-squirrel.sh
+        container: qc.acc_sunny-olive-collie
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-dandelion-tiger.sh
-        container: qc.doc_craggy-ochre-wildebeest
+        - /usr/bin/env sh .sqa/script.gloppy-ochre-lemming.sh
+        container: qc.doc_lovely-yellow-chamois
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cerise-manatee.sh
-        container: qc.doc_beady-mauve-mule
+        - /usr/bin/env sh .sqa/script.dorky-sangria-argentino.sh
+        container: qc.doc_craggy-gamboge-bloodhound
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-brown-vole.sh
-        container: qc.doc_queasy-chocolate-bongo
+        - /usr/bin/env sh .sqa/script.tacky-sepia-bulldog.sh
+        container: qc.doc_trippy-scarlet-quail
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-coral-echidna.sh
-        container: qc.doc_shabby-crimson-abyssinian
+        - /usr/bin/env sh .sqa/script.wheezy-orchid-cockroach.sh
+        container: qc.doc_snoopy-crimson-termite
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-eggplant-macaque.sh
-        container: qc.lic_messy-razzmatazz-impala
+        - /usr/bin/env sh .sqa/script.chummy-coral-booby.sh
+        container: qc.lic_fuzzy-apricot-opossum
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-mustard-boar.sh
-        container: qc.met_lovely-emerald-caterpillar
+        - /usr/bin/env sh .sqa/script.lanky-mustard-frigatebird.sh
+        container: qc.met_greasy-tomato-koala
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-violet-turtle.sh
-        container: qc.sec_cranky-buff-burmese
+        - /usr/bin/env sh .sqa/script.sloppy-tangerine-beetle.sh
+        container: qc.sec_cozy-xanthic-reindeer
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-pumpkin-quail.sh
-        container: qc.sty_dorky-chartreuse-chin
+        - /usr/bin/env sh .sqa/script.whiny-wisteria-javanese.sh
+        container: qc.sty_hilly-amethyst-coral
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-violet-reindeer.sh
-        container: qc.sty_lousy-firebrick-chow
+        - /usr/bin/env sh .sqa/script.foggy-magenta-stoat.sh
+        container: qc.sty_wiggy-heliotrope-weasel
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-mustard-dog.sh
-        container: qc.sty_breezy-pink-bongo
+        - /usr/bin/env sh .sqa/script.skimpy-amber-manatee.sh
+        container: qc.sty_jumpy-coral-chicken
+  QC.Uni:
+    repos:
+      github.com/grycap/im tox:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-viridian-numbat.sh
+        container: qc.uni_muggy-fuchsia-cat
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-mustard-quoll.sh
-        container: qc.ver_gimpy-salmon-swan
+        - /usr/bin/env sh .sqa/script.geeky-turquoise-bonobo.sh
+        container: qc.ver_flabby-olive-opossum
 timeout: 5400
