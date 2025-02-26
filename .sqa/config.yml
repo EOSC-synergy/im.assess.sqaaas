@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.1.1
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-scarlet-hound.sh
-        container: qc.acc_muggy-rust-fousek
+        - /usr/bin/env sh .sqa/script.goopy-cinnabar-vole.sh
+        container: qc.acc_geeky-white-hyrax
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-heliotrope-squirt.sh
-        container: qc.doc_geeky-mustard-magpie
+        - /usr/bin/env sh .sqa/script.wimpy-coral-zebra.sh
+        container: qc.doc_wheezy-platinum-panda
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-ecru-lobster.sh
-        container: qc.doc_pokey-orchid-cow
+        - /usr/bin/env sh .sqa/script.freaky-peach-elephant.sh
+        container: qc.doc_nippy-xanthic-gopher
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-cream-salamander.sh
-        container: qc.doc_muggy-cornflower-beagle
+        - /usr/bin/env sh .sqa/script.hazy-malachite-terrier.sh
+        container: qc.doc_boozy-alizarin-worm
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-peach-slug.sh
-        container: qc.doc_clammy-purple-eagle
+        - /usr/bin/env sh .sqa/script.blurry-russet-squirrel.sh
+        container: qc.doc_crappy-rose-kiwi
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-corn-crane.sh
-        container: qc.lic_sleazy-rose-peccary
+        - /usr/bin/env sh .sqa/script.scaly-cyan-ostrich.sh
+        container: qc.lic_skimpy-cream-eel
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-bistre-pig.sh
-        container: qc.met_lovely-auburn-llama
+        - /usr/bin/env sh .sqa/script.shaggy-yellow-octopus.sh
+        container: qc.met_lumpy-teal-hornet
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-celadon-dragon.sh
-        container: qc.sec_lumpy-cornflower-clam
+        - /usr/bin/env sh .sqa/script.cheeky-rust-angelfish.sh
+        container: qc.sec_cloudy-cerulean-ray
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-lemon-deer.sh
-        container: qc.sty_stinky-myrtle-tiger
+        - /usr/bin/env sh .sqa/script.squirrely-crimson-terrier.sh
+        container: qc.sty_lanky-bronze-wrasse
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-flax-ladybird.sh
-        container: qc.sty_jumpy-asparagus-echidna
+        - /usr/bin/env sh .sqa/script.paltry-blue-dollar.sh
+        container: qc.sty_seedy-amethyst-wildebeest
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-chocolate-bulldog.sh
-        container: qc.sty_flaky-linen-saola
+        - /usr/bin/env sh .sqa/script.woolly-brass-cheetah.sh
+        container: qc.sty_flimsy-zucchini-forest
   QC.Uni:
     repos:
       github.com/grycap/im tox:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-crimson-salamander.sh
-        container: qc.uni_tacky-cerulean-spaniel
+        - /usr/bin/env sh .sqa/script.woolly-indigo-oyster.sh
+        container: qc.uni_foggy-mauve-uguisu
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-beige-capuchin.sh
-        container: qc.ver_stealthy-malachite-chihuahua
+        - /usr/bin/env sh .sqa/script.muggy-razzmatazz-axolotl.sh
+        container: qc.ver_pretty-viridian-echidna
 timeout: 5400

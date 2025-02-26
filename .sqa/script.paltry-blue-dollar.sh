@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    mdl --json .
+    hadolint monitoring/Dockerfile docker-py3/Dockerfile docker-devel/Dockerfile --failure-threshold error
 )
