@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd www &&
-    pytest  --json-report  --json-report-indent 4
+cd github.com/grycap/im &&
+    hadolint monitoring/Dockerfile docker-py3/Dockerfile docker-devel/Dockerfile --failure-threshold error
 )
