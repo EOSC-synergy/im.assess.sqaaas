@@ -5,5 +5,5 @@
 
 (
 cd github.com/grycap/im &&
-    hadolint monitoring/Dockerfile docker-py3/Dockerfile docker-devel/Dockerfile --failure-threshold error
+    pip install tox && tox -e py3
 )

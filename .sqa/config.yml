@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: sqa
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-cinnabar-vole.sh
-        container: qc.acc_geeky-white-hyrax
+        - /usr/bin/env sh .sqa/script.snippy-mauve-mouse.sh
+        container: qc.acc_sleazy-ivory-havanese
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-coral-zebra.sh
-        container: qc.doc_wheezy-platinum-panda
+        - /usr/bin/env sh .sqa/script.queasy-amaranth-koala.sh
+        container: qc.doc_flabby-pear-tzu
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-peach-elephant.sh
-        container: qc.doc_nippy-xanthic-gopher
+        - /usr/bin/env sh .sqa/script.dorky-rust-mau.sh
+        container: qc.doc_hazy-mustard-rhinoceros
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-malachite-terrier.sh
-        container: qc.doc_boozy-alizarin-worm
+        - /usr/bin/env sh .sqa/script.foggy-puce-hedgehog.sh
+        container: qc.doc_leaky-periwinkle-centipede
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-russet-squirrel.sh
-        container: qc.doc_crappy-rose-kiwi
+        - /usr/bin/env sh .sqa/script.sloppy-denim-liger.sh
+        container: qc.doc_shaky-bistre-saola
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cyan-ostrich.sh
-        container: qc.lic_skimpy-cream-eel
+        - /usr/bin/env sh .sqa/script.bluesy-eggplant-quetzal.sh
+        container: qc.lic_pokey-grey-moorhen
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-yellow-octopus.sh
-        container: qc.met_lumpy-teal-hornet
+        - /usr/bin/env sh .sqa/script.whiny-thistle-toucan.sh
+        container: qc.met_dorky-khaki-angelfish
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-rust-angelfish.sh
-        container: qc.sec_cloudy-cerulean-ray
+        - /usr/bin/env sh .sqa/script.droopy-coral-macaque.sh
+        container: qc.sec_chewy-puce-raccoon
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-crimson-terrier.sh
-        container: qc.sty_lanky-bronze-wrasse
+        - /usr/bin/env sh .sqa/script.shabby-seashell-blue.sh
+        container: qc.sty_gloppy-chartreuse-baboon
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-blue-dollar.sh
-        container: qc.sty_seedy-amethyst-wildebeest
+        - /usr/bin/env sh .sqa/script.cloudy-emerald-swan.sh
+        container: qc.sty_whiny-green-moth
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-brass-cheetah.sh
-        container: qc.sty_flimsy-zucchini-forest
+        - /usr/bin/env sh .sqa/script.crappy-ruby-grasshopper.sh
+        container: qc.sty_gummy-amethyst-capuchin
   QC.Uni:
     repos:
-      github.com/grycap/im tox:
+      github.com/grycap/im commands:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-indigo-oyster.sh
-        container: qc.uni_foggy-mauve-uguisu
+        - /usr/bin/env sh .sqa/script.smelly-carmine-spaniel.sh
+        container: qc.uni_shabby-beige-foxhound
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-razzmatazz-axolotl.sh
-        container: qc.ver_pretty-viridian-echidna
+        - /usr/bin/env sh .sqa/script.scaly-cinnabar-rabbit.sh
+        container: qc.ver_snippy-aquamarine-magpie
 timeout: 5400
