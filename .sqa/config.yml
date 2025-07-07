@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
-      branch: master
+      branch: v1.19.0
       repo: https://github.com/grycap/im
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-olivine-quoll.sh
-        container: qc.acc_baggy-heliotrope-vulture
+        - /usr/bin/env sh .sqa/script.grumpy-bronze-mule.sh
+        container: qc.acc_wiggy-malachite-capybara
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-dandelion-tiger.sh
-        container: qc.doc_craggy-ochre-wildebeest
+        - /usr/bin/env sh .sqa/script.bluesy-champagne-dachshund.sh
+        container: qc.doc_flabby-violet-burmese
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cerise-manatee.sh
-        container: qc.doc_beady-mauve-mule
+        - /usr/bin/env sh .sqa/script.hilly-cinnamon-sparrow.sh
+        container: qc.doc_gamy-purple-quokka
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-brown-vole.sh
-        container: qc.doc_queasy-chocolate-bongo
+        - /usr/bin/env sh .sqa/script.cranky-lime-hyrax.sh
+        container: qc.doc_baggy-platinum-fowl
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-coral-echidna.sh
-        container: qc.doc_shabby-crimson-abyssinian
+        - /usr/bin/env sh .sqa/script.bluesy-puce-raccoon.sh
+        container: qc.doc_stealthy-goldenrod-mouse
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-eggplant-macaque.sh
-        container: qc.lic_messy-razzmatazz-impala
+        - /usr/bin/env sh .sqa/script.breezy-auburn-jellyfish.sh
+        container: qc.lic_stinky-cinnamon-ocelot
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-mustard-boar.sh
-        container: qc.met_lovely-emerald-caterpillar
+        - /usr/bin/env sh .sqa/script.blurry-saffron-ferret.sh
+        container: qc.met_woozy-amethyst-hummingbird
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-violet-turtle.sh
-        container: qc.sec_cranky-buff-burmese
+        - /usr/bin/env sh .sqa/script.stealthy-charcoal-frise.sh
+        container: qc.sec_shaggy-violet-mole
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-pumpkin-quail.sh
-        container: qc.sty_dorky-chartreuse-chin
+        - /usr/bin/env sh .sqa/script.scanty-vermilion-raccoon.sh
+        container: qc.sty_sunny-mustard-moth
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-violet-reindeer.sh
-        container: qc.sty_lousy-firebrick-chow
+        - /usr/bin/env sh .sqa/script.zippy-magenta-civet.sh
+        container: qc.sty_geeky-maroon-quoll
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-mustard-dog.sh
-        container: qc.sty_breezy-pink-bongo
+        - /usr/bin/env sh .sqa/script.crappy-rust-dogfish.sh
+        container: qc.sty_nippy-eggplant-whale
+  QC.Uni:
+    repos:
+      github.com/grycap/im tox:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-flax-gibbon.sh
+        container: qc.uni_cozy-vermilion-javanese
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-mustard-quoll.sh
-        container: qc.ver_gimpy-salmon-swan
+        - /usr/bin/env sh .sqa/script.squirrely-salmon-greyhound.sh
+        container: qc.ver_gamy-wisteria-tarsier
 timeout: 5400
