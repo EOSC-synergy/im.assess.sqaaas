@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
-      branch: master
+      branch: v2.0.0
       repo: https://github.com/grycap/im
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-olivine-quoll.sh
-        container: qc.acc_baggy-heliotrope-vulture
+        - /usr/bin/env sh .sqa/script.celadon_tough_kirin.sh
+        container: qc.acc_pearl_confident_gorilla
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-dandelion-tiger.sh
-        container: qc.doc_craggy-ochre-wildebeest
+        - /usr/bin/env sh .sqa/script.ash_whimsical_vulture.sh
+        container: qc.doc_glaucous_courageous_ibis
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cerise-manatee.sh
-        container: qc.doc_beady-mauve-mule
+        - /usr/bin/env sh .sqa/script.cornflower_patient_jackal.sh
+        container: qc.doc_peony_flexible_elk
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-brown-vole.sh
-        container: qc.doc_queasy-chocolate-bongo
+        - /usr/bin/env sh .sqa/script.zinnia_dramatic_moth.sh
+        container: qc.doc_byzantium_assured_hawk
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-coral-echidna.sh
-        container: qc.doc_shabby-crimson-abyssinian
+        - /usr/bin/env sh .sqa/script.peony_mysterious_swan.sh
+        container: qc.doc_ivory_ardent_buffalo
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-eggplant-macaque.sh
-        container: qc.lic_messy-razzmatazz-impala
+        - /usr/bin/env sh .sqa/script.ruby_amiable_boa.sh
+        container: qc.lic_beige_agile_caribou
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-mustard-boar.sh
-        container: qc.met_lovely-emerald-caterpillar
+        - /usr/bin/env sh .sqa/script.cloud_spirited_armadillo.sh
+        container: qc.met_frost_upbeat_tortoise
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-violet-turtle.sh
-        container: qc.sec_cranky-buff-burmese
+        - /usr/bin/env sh .sqa/script.sand_logical_lynx.sh
+        container: qc.sec_smoke_philosophical_cormorant
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-pumpkin-quail.sh
-        container: qc.sty_dorky-chartreuse-chin
+        - /usr/bin/env sh .sqa/script.silver_audacious_boar.sh
+        container: qc.sty_fog_friendly_wildcat
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-violet-reindeer.sh
-        container: qc.sty_lousy-firebrick-chow
+        - /usr/bin/env sh .sqa/script.indigo_agile_squid.sh
+        container: qc.sty_raven_studious_kangaroo
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-mustard-dog.sh
-        container: qc.sty_breezy-pink-bongo
+        - /usr/bin/env sh .sqa/script.cardamom_diligent_osprey.sh
+        container: qc.sty_maroon_visionary_pegasus
+  QC.Uni:
+    repos:
+      github.com/grycap/im commands:
+        commands:
+        - /usr/bin/env sh .sqa/script.jade_persistent_puffin.sh
+        container: qc.uni_slate_grumpy_porpoise
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-mustard-quoll.sh
-        container: qc.ver_gimpy-salmon-swan
+        - /usr/bin/env sh .sqa/script.azure_cautious_toad.sh
+        container: qc.ver_glaucous_ambitious_mink
 timeout: 5400
