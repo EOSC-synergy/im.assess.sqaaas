@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.purple_reflective_coyote.sh
-        container: qc.acc_wave_warm_sloth
+        - /usr/bin/env sh .sqa/script.daffodil_productive_panda.sh
+        container: qc.acc_lemon_ardent_toad
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crimson_patient_echidna.sh
-        container: qc.doc_papaya_humorous_finch
+        - /usr/bin/env sh .sqa/script.taupe_reflective_vulture.sh
+        container: qc.doc_green_generous_axolotl
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.rust_resourceful_skunk.sh
-        container: qc.doc_aqua_patient_buffalo
+        - /usr/bin/env sh .sqa/script.cornflower_analytical_unicorn.sh
+        container: qc.doc_sienna_skeptical_turtle
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cerise_eccentric_jackal.sh
-        container: qc.doc_forest_calm_baboon
+        - /usr/bin/env sh .sqa/script.yellow_gentle_gerbil.sh
+        container: qc.doc_paprika_calm_emu
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wisteria_creative_eagle.sh
-        container: qc.doc_nutmeg_bright_nymph
+        - /usr/bin/env sh .sqa/script.pink_analytical_lionfish.sh
+        container: qc.doc_khaki_meticulous_emu
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.moss_productive_mink.sh
-        container: qc.lic_lemon_rational_crane
+        - /usr/bin/env sh .sqa/script.rust_timid_toad.sh
+        container: qc.lic_cloud_gracious_ostrich
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.ochre_optimistic_dragonfly.sh
-        container: qc.met_gunmetal_visionary_rattlesnake
+        - /usr/bin/env sh .sqa/script.ochre_inventive_dolphin.sh
+        container: qc.met_ebony_stoic_pangolin
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.turquoise_brilliant_turtle.sh
-        container: qc.sec_alabaster_eager_chimpanzee
+        - /usr/bin/env sh .sqa/script.white_funny_octopus.sh
+        container: qc.sec_wave_artistic_emu
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ultramarine_delighted_jaguar.sh
-        container: qc.sty_burgundy_tenacious_leopard
+        - /usr/bin/env sh .sqa/script.slate_blissful_sloth.sh
+        container: qc.sty_strawberry_reflective_axolotl
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.porcelain_rational_manta.sh
-        container: qc.sty_sage_stubborn_spren
+        - /usr/bin/env sh .sqa/script.cobalt_empathetic_jellyfish.sh
+        container: qc.sty_emerald_grateful_camel
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.zinnia_bubbly_python.sh
-        container: qc.sty_walnut_shrewd_leopard
+        - /usr/bin/env sh .sqa/script.iris_organized_reindeer.sh
+        container: qc.sty_fuchsia_clever_serval
   QC.Uni:
     repos:
       github.com/grycap/im pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.powder_silly_emu.sh
-        container: qc.uni_pansy_affectionate_tiger
+        - /usr/bin/env sh .sqa/script.viridian_protective_cassowary.sh
+        container: qc.uni_lime_friendly_capybara
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.echelon_energetic_albatross.sh
-        container: qc.ver_umber_tolerant_wolf
+        - /usr/bin/env sh .sqa/script.mango_worried_bear.sh
+        container: qc.ver_poppy_outgoing_ferret
 timeout: 5400
