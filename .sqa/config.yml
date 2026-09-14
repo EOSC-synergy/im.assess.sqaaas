@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/im:
       branch: master
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-myrtle-burmese.sh
-        container: qc.acc_sleepy-yellow-grouse
+        - /usr/bin/env sh .sqa/script.purple_reflective_coyote.sh
+        container: qc.acc_wave_warm_sloth
   QC.Doc:
     repos:
       github.com/grycap/im find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cornflower-shrew.sh
-        container: qc.doc_lousy-lemon-axolotl
+        - /usr/bin/env sh .sqa/script.crimson_patient_echidna.sh
+        container: qc.doc_papaya_humorous_finch
       github.com/grycap/im git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-cerulean-slug.sh
-        container: qc.doc_lovely-harlequin-baboon
+        - /usr/bin/env sh .sqa/script.rust_resourceful_skunk.sh
+        container: qc.doc_aqua_patient_buffalo
       github.com/grycap/im markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-pink-camel.sh
-        container: qc.doc_paltry-bronze-dollar
+        - /usr/bin/env sh .sqa/script.cerise_eccentric_jackal.sh
+        container: qc.doc_forest_calm_baboon
       github.com/grycap/im restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-bistre-guppy.sh
-        container: qc.doc_skimpy-charcoal-argentino
+        - /usr/bin/env sh .sqa/script.wisteria_creative_eagle.sh
+        container: qc.doc_nutmeg_bright_nymph
   QC.Lic:
     repos:
       github.com/grycap/im licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-cyan-blue.sh
-        container: qc.lic_nippy-cornflower-reindeer
+        - /usr/bin/env sh .sqa/script.moss_productive_mink.sh
+        container: qc.lic_lemon_rational_crane
   QC.Met:
     repos:
       github.com/grycap/im validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-pear-wolfhound.sh
-        container: qc.met_snippy-tomato-javanese
+        - /usr/bin/env sh .sqa/script.ochre_optimistic_dragonfly.sh
+        container: qc.met_gunmetal_visionary_rattlesnake
   QC.Sec:
     repos:
       github.com/grycap/im bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-grey-dunker.sh
-        container: qc.sec_tacky-myrtle-dragon
+        - /usr/bin/env sh .sqa/script.turquoise_brilliant_turtle.sh
+        container: qc.sec_alabaster_eager_chimpanzee
   QC.Sty:
     repos:
       github.com/grycap/im flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-viridian-dragonfly.sh
-        container: qc.sty_muggy-firebrick-oyster
+        - /usr/bin/env sh .sqa/script.ultramarine_delighted_jaguar.sh
+        container: qc.sty_burgundy_tenacious_leopard
       github.com/grycap/im hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-cinnamon-orangutan.sh
-        container: qc.sty_baggy-mauve-schnauzer
+        - /usr/bin/env sh .sqa/script.porcelain_rational_manta.sh
+        container: qc.sty_sage_stubborn_spren
       github.com/grycap/im jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-maroon-mau.sh
-        container: qc.sty_lousy-pink-coyote
+        - /usr/bin/env sh .sqa/script.zinnia_bubbly_python.sh
+        container: qc.sty_walnut_shrewd_leopard
   QC.Uni:
     repos:
       github.com/grycap/im pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-fuchsia-markhor.sh
-        container: qc.uni_muggy-gamboge-gecko
+        - /usr/bin/env sh .sqa/script.powder_silly_emu.sh
+        container: qc.uni_pansy_affectionate_tiger
   QC.Ver:
     repos:
       github.com/grycap/im get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-buff-akbash.sh
-        container: qc.ver_cozy-beige-collie
+        - /usr/bin/env sh .sqa/script.echelon_energetic_albatross.sh
+        container: qc.ver_umber_tolerant_wolf
 timeout: 5400
